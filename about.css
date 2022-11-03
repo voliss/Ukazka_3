@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:rgba(0, 102, 255);
+}
+
+#mainNavbar {
+    z-index: 2;
+}
+
+#mainNavbar .logo {
+    transform: translateX(100px);
+}
+
+.navbar-nav {
+    width: 950px;
+}
+
+.navbar-nav a {
+    font-size: 1.4em;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    text-decoration: none;
+}
+
+#navbarNavAltMarkup {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+#navbarNavAltMarkup a {
+    color: white;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(0, 102, 255, 0.74);
+}
+
+.videjko video {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    object-fit: cover;
+}
+
+.prekryvacka {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(250, 250, 250);
+    mix-blend-mode: overlay;
+}
+
+.text {
+    position: absolute;
+    top: 60%;
+    right: 25%;
+    color: white;
+    background: rgba(0, 102, 255, 0.74);
+    padding: 20px 40px;
+    z-index: 2;
+    font-family: 'Poppins', sans-serif;
+}
+
+.videjko h1 {
+    font-size: 5em;
+    text-align: center;
+}
+
+.videjko .jedna {
+    font-size: 3.5em;
+    text-align: center;
+}
+
+.videjko .dva {
+    font-size: 3.5em;
+    text-align: center;
+}
+
+.about {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    bottom: -850px;
+    text-align: center;
+    background-color:rgba(0, 102, 255);
+    padding: 100px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nadpis-jedna {
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+
+.about h1 {
+    text-align: left;
+    color: white;
+    font-size: 3em;
+}
+
+.about h3 {
+    color: white;
+    text-align: left;
+    font-size: 2em;
+}
+
+.nadpis-jedna-uka {
+    opacity: 1;
+}
+
+.uspechy {
+    margin-top: 100px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nadpis-dva {
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+
+.uspechy h1, .uspechy h3 {
+    text-align: right;
+    margin-left: auto;
+}
+
+.nadpis-dva-uka {
+    opacity: 1;
+}
+
+.spodek {
+    background: rgb(94, 94, 94);
+    position: absolute;
+    bottom: -850px;
+    width: 100%;
+    padding: 40px;
+}
+
+.footer-navi ul {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    margin: auto;
+}
+
+.footer-navi li {
+    text-decoration: none;
+    list-style: none;
+    margin: auto;
+}
+
+.footer-navi li a {
+    color: white;
+    font-size: 1.25em;
+}
+
+.footer-navi li a:hover {
+    text-decoration: none;
+}
+
+.spodek span {
+    margin-top: 60px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9em;
+}

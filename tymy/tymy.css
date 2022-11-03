@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #dadada;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#mainNavbar {
+  background-color: rgba(0, 102, 255, 0.74);
+  width: 100%;
+}
+
+#mainNavbar .logo {
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+}
+
+.navbar-nav {
+  width: 950px;
+}
+
+.navbar-nav a {
+  font-size: 1.4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  text-decoration: none;
+}
+
+#navbarNavAltMarkup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: auto;
+}
+
+#navbarNavAltMarkup a {
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(0, 102, 255, 0.74);
+}
+
+.slider {
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 800px;
+  height: 650px;
+  overflow: hidden;
+}
+
+.slajdy {
+  width: 100%;
+  height: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.slajdy input {
+  display: none;
+}
+
+.obr {
+  width: 100%;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.obr img {
+  width: 800px;
+}
+
+.manual {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 5%;
+  width: 800px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.man-btn {
+  border: 2px solid white;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.man-btn:not(:last-child) {
+  margin-right: 50px;
+}
+
+.man-btn:hover {
+  background-color: rgba(0, 102, 255, 0.74);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#radio1:checked ~ .prvni {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .prvni {
+  margin-left: -100%;
+}
+
+#radio3:checked ~ .prvni {
+  margin-left: -200%;
+}
+
+#radio4:checked ~ .prvni {
+  margin-left: -300%;
+}
+
+.automat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 5%;
+  width: 800px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.automat div {
+  border: 2px solid white;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.automat div:not(:last-child) {
+  margin-right: 50px;
+}
+
+#radio1:checked ~ .automat .auto-tla1 {
+  background-color: rgba(0, 102, 255, 0.74);
+}
+
+#radio2:checked ~ .automat .auto-tla2 {
+  background-color: rgba(0, 102, 255, 0.74);
+}
+
+#radio3:checked ~ .automat .auto-tla3 {
+  background-color: rgba(0, 102, 255, 0.74);
+}
+
+#radio4:checked ~ .automat .auto-tla4 {
+  background-color: rgba(0, 102, 255, 0.74);
+}
+
+.nad {
+  opacity: 0;
+  -webkit-transition: 1s all ease-in-out;
+  transition: 1s all ease-in-out;
+  z-index: 2;
+  color: white;
+  position: absolute;
+  font-size: 2.7em;
+  top: 65%;
+  left: 5%;
+  background-color: rgba(0, 102, 255, 0.74);
+  padding: 5px 15px;
+}
+
+.obloukovina {
+  background-color: rgba(0, 102, 255, 0.74);
+  width: 800px;
+}
+
+.nadpisy {
+  color: white;
+  text-align: right;
+  padding: 100px 100px;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+}
+
+.nadpisy h1 {
+  font-size: 4em;
+}
+
+.nadpisy h2 {
+  font-size: 3em;
+}
+
+.partneri {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  right: 5%;
+  top: 30%;
+}
+
+.partneri h1 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.partneri-dva {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10rem 10rem;
+      grid-template-columns: 10rem 10rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+  row-gap: 15px;
+  position: absolute;
+  right: 4%;
+  top: 50%;
+}
+
+.partneri-dva img {
+  width: 100%;
+}
+
+.sestava {
+  width: 800px;
+}
+
+.sestava h1 {
+  background-color: rgba(0, 102, 255, 0.74);
+  color: white;
+  padding: 20px 0px;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.sestava-golmici, .sestava-obranci, .sestava-zaloznici, .sestava-utocnici {
+  width: 800px;
+  padding: 20px 0px;
+}
+
+table {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+thead {
+  font-size: 1.4em;
+  border-bottom: 1px solid black;
+}
+
+th, td {
+  font-size: 1.2em;
+  text-align: center;
+  padding: 1px 0px;
+}
+
+.spodek {
+  background: #5e5e5e;
+  padding: 40px;
+  width: 100%;
+  position: absolute;
+  bottom: -1900px;
+}
+
+.footer-navi ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 800px;
+  margin: auto;
+}
+
+.footer-navi li {
+  text-decoration: none;
+  list-style: none;
+  margin: auto;
+}
+
+.footer-navi li a {
+  color: white;
+  font-size: 1.25em;
+}
+
+.footer-navi li a:hover {
+  text-decoration: none;
+}
+
+.spodek span {
+  margin-top: 60px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 0.9em;
+}
+/*# sourceMappingURL=tymy.css.map */

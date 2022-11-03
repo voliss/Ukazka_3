@@ -1,0 +1,141 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="prihlaska.css">
+    <script src="app.js"></script>
+    <title>FK ACL</title>
+</head>
+<body>
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light">
+      <a class="logo" href="landing.html"><img src="media/acl.png" width="100" height="100" class="d-inline-block align-top" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="landing.html">Domů</a>
+            <div class="dropdown">
+            <a class="nav-item nav-link dropdown-toggle" role="button" data-toggle="dropdown" id="navBarDrop" href="#">Týmy</a>
+            <div class="dropdown-menu bg-dark" aria-labelledby="navBarDrop" href="">
+              <a class="dropdown-item" href="tymy/acko.html">Muži A</a>
+              <a class="dropdown-item" href="tymy/bcko.html">Muži B</a>
+              <a class="dropdown-item" href="tymy/devatenactka.html">U19</a>
+              <a class="dropdown-item" href="#">U17</a>
+              <a class="dropdown-item" href="#">U15</a>
+            </div>
+          </div>
+            <a class="nav-item nav-link" href="realizak.html">Realizační tým</a>
+            <a class="nav-item nav-link" href="prihlaska.html">Přihláška</a>
+            <a class="nav-item nav-link" href="utkani.html">Hodnocení utkáni</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="kontejner">
+        <div class="card">
+          <img class="card-img-top" src="https://fkceskalipa.cz/files/images/galleries/1/albums/314/76a0ebbd-c387-431d-a121-557270e7cce5.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Hráč kategorie U19 Matouš Volek</h5>
+            <p class="card-text">Vyrůstal jsem tu od mala. 
+              S fotbalem jsem začínal v 5 letech a neustále mě to baví. 
+              Tenhle tým mám v srdci a jsem vděčný, že jsem celé 
+              mládežnické kategorie strávil pravě tady. Lorem, ipsum dolor sit
+              amet consectetur 
+              adipisicing elit. Id, est laboriosam quas eaque asperiores eligendi. 
+              Quo nihil, id illo ex possimus, quod error deserunt repudiandae, debitis.</p>
+            <a href="#" class="btn btn-primary">Čtěte více</a>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" id="trener" src="https://fkceskalipa.cz/files/images/galleries/1/albums/314/12dee4f8-04bb-49a2-9a90-68caa589f8f6.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Trenér Jaroslav Ruč</h5>
+            <p class="card-text">Je tu skvělé zázemí včetně jedné UMT. 
+              Troufám si tvrdit, že nejlepší na okrese Česká Lípa. 
+              Po sportovní stránce dbáme na budovaní týmového kolektivu
+               a všeobecný fyzický rozvoj.</p>
+            <a href="#" class="btn btn-primary">Čtěte více</a>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="https://fkceskalipa.cz/files/images/galleries/1/albums/19/468fe3ab-fccf-4220-8a26-b105569c555b.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Otec kategorie U11 Petr Novák</h5>
+            <p class="card-text">Práce s dětmi je zde opravdu skvělá. 
+              Syna fotbal strašně baví a na Arsenalu dlouhodobou prací
+               tvoří z dětí šikovné hráče, kteří často přestupují i do ligových týmů. 
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+               Adipisci quo eligendi quibusdam tempore debitis ullam molestias esse, 
+               voluptas iure eos recusandae numquam quia temporibus inventore commodi
+               facere iste ratione magnam!</p>
+            <a href="#" class="btn btn-primary">Čtěte více</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="linie">
+      <div class="pobidka">
+          <h1>Hraj fotbal!</h1>
+          <h3>V nejlepším týmu</h3>
+          <h3>na okrese Česká Lípa</h3>
+      </div>
+
+      <div class="formicka">
+      <form>
+        <div class="form-group col-md">
+          <label for="jmeno">Jméno</label>
+          <input type="text" class="form-control" id="jmeno" placeholder="Krestni jmeno">
+        </div>
+        <div class="form-group col-md">
+          <label for="prijmeni">Přijmení</label>
+          <input type="text" class="form-control" id="prijmeni" placeholder="Prijmeni">
+        </div>
+        <div class="form-group col-md">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Vlozte email">
+          </div>
+          <div class="form-group col-md">
+            <label for="telcislo">Tel.číslo</label>
+            <input type="tel" class="form-control" id="telcislo" placeholder="Vlozte tel.cislo" pattern="[1-9]{3}-[1-9]{3}-[1-9]{3}">
+          </div>
+          <div class="form-group col-md">
+            <label for="post">Vyber tvůj oblíbený post</label>
+            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                <option selected>Vyber...</option>
+                <option value="1">Brankář</option>
+                <option value="2">Obránce</option>
+                <option value="3">Záložník</option>
+                <option value="4">Útočník</option>
+              </select>
+          </div>
+          <div class="form-group col-md">
+            <label for="datum">Vyber datum narození</label>
+            <input type="date" class="form-control" id="datum">
+          </div>
+          <button type="submit" class="btn btn-warning">Odeslat</button>
+      </form>
+      </div>
+    </div>
+      
+
+      <footer class="spodek">
+        <div class="container">
+          <nav class="footer-navi">
+          <ul>
+            <li><a href="kontakty.html">Kontakty</a></li>
+            <li><a href="about.html">O nás</a> </li>
+            <li><a href="kde.html">Kde nás najdete</a></li>
+          </ul>
+          <span>Copywright  © 2021 Lukáš Volek</span>
+        </nav>
+        </div>
+      </footer>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(218, 218, 218);
+}
+
+#mainNavbar {
+    background-color: rgba(0, 102, 255, 0.74);
+}
+
+#mainNavbar .logo {
+    transform: translateX(100px);
+}
+
+.navbar-nav {
+    width: 950px;
+}
+
+.navbar-nav a {
+    font-size: 1.4em;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    text-decoration: none;
+}
+
+#navbarNavAltMarkup {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+#navbarNavAltMarkup a {
+    color: white;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(0, 102, 255, 0.74);
+}
+
+.row {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    transform: translateY(100px);
+}
+
+
+.tabule {
+    width: 70%;
+    font-size: 1.1em;
+    align-items: center;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    white-space: nowrap;
+    background-color: white;
+}
+
+.tabule thead {
+    text-align: left;
+    background-color: rgba(0, 102, 255, 0.74);
+    color: white;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.tabule th, .tabule td  {
+    padding: 10px 35px;
+    text-align: center;
+}
+
+.tabule tbody tr {
+    border-bottom: 1px solid #33333367;
+}
+
+.obloukovina-vrch {
+    background-color: rgba(0, 102, 255, 0.74);
+}
+
+.obloukovina {
+    background-color: rgba(0, 102, 255, 0.74);
+    text-align: center;
+}
+
+.nadpis {
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+
+.nadpis-uka {
+    opacity: 1;
+}
+
+.obloukovina h1 {
+    color: white;
+    text-transform: uppercase;
+    transform: translateY(100px);
+}
+
+.obloukovina h3 {
+    transform: translateY(100px);
+}
+
+.obloukovina svg {
+    display: block;
+}
+
+.kont {
+    display: grid;
+    grid-template-columns: 25rem 25rem;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.spodek {
+    background: rgb(94, 94, 94);
+    position: absolute;
+    bottom: -1300px;
+    width: 100%;
+    padding: 40px;
+}
+
+.footer-navi ul {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    margin: auto;
+}
+
+.footer-navi li {
+    text-decoration: none;
+    list-style: none;
+    margin: auto;
+}
+
+.footer-navi li a {
+    color: white;
+    font-size: 1.25em;
+}
+
+.footer-navi li a:hover {
+    text-decoration: none;
+}
+
+.spodek span {
+    margin-top: 60px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9em;
+}

@@ -1,0 +1,381 @@
+$sedoACL: rgba(94, 94, 94, 0.699);
+$modraACL: rgba(0, 102, 255, 0.74);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(218, 218, 218);
+}
+
+#mainNavbar {
+    background-color: $modraACL;
+}
+
+#mainNavbar .logo {
+    transform: translateX(100px);
+}
+
+.navbar-nav li, .dropdown {
+    margin-right: 40px;
+}
+
+.navbar-nav a {
+     font-size: 1.4em;
+     display: flex;
+     align-items: center;
+     margin: auto;
+     text-decoration: none;
+ }
+
+#navbarNav {
+    justify-content: space-around;
+    margin: auto;
+}
+
+#navbarNav a {
+    color: white;
+}
+
+.dropdown-item:hover {
+    background-color: $modraACL;
+}
+
+.svgecko {
+    background-color: $modraACL;
+}
+
+.hlavni-fot {
+    position: relative;
+    bottom: 400px;
+    display: grid;
+    grid-template-columns: 45rem 45rem;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 70px 0px;
+
+    img {
+        width: 100%;
+        height: 550px;
+        box-shadow: 0px 0px 5px black;
+    }
+}
+
+.karta-jedna {
+    position: relative;
+}
+
+.text-jedna h1 {
+     color: white;
+     background: rgba(0, 102, 255, 0.623);
+     position: absolute;
+     top: 70%;
+     left: 5%;
+     padding: 0px 20px;
+}
+
+.text-jedna a:hover {
+     text-decoration: none;
+}
+
+.karta-dva {
+     position: relative;
+}
+
+.text-dva h1 {
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    color: white;
+    background: rgba(0, 102, 255, 0.623);
+    padding: 0px 20px;
+
+}
+
+.text-dva a:hover {
+     text-decoration: none;
+}
+
+.stredo-fot {
+    background-color: $modraACL;
+    padding: 50px 0px;
+    padding-bottom: 80px;
+    position: relative;
+    bottom: 300px;
+
+    h1 {
+        text-align: center;
+        color: white;
+        padding-bottom: 50px;
+        text-transform: uppercase;
+        font-family: 'Poppins', sans-serif;
+        font-size: 4.5em;
+    }
+}
+
+.troj-fot {
+    display: grid;
+    grid-template-columns: 30rem 30rem 30rem;
+    justify-content: space-evenly;
+    align-items: stretch;
+
+    img {
+    width: 500px;
+    height: 350px;
+    }
+}
+
+.karta-tri {
+    position: relative;
+    bottom: 170px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.text-tri {
+    position: absolute;
+    top: 70%;
+    left: 25%;
+}
+
+.text-tri h1  {
+    color: white;
+    background: rgba(0, 102, 255, 0.623);
+    padding: 0px 20px;
+}
+
+.text-tri a:hover {
+    text-decoration: none;
+}
+
+.spodek {
+    background: rgb(94, 94, 94);
+    padding: 40px;
+    width: 100%;
+    position: absolute;
+}
+
+.footer-navi ul {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    margin: auto;
+}
+
+.footer-navi li {
+    text-decoration: none;
+    list-style: none;
+    margin: auto;
+}
+
+.footer-navi li a {
+    color: white;
+    font-size: 1.25em;
+}
+
+.footer-navi li a:hover {
+    text-decoration: none;
+}
+
+.spodek span {
+    margin-top: 60px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9em;
+}
+
+@media (max-width: 1700px) {
+    #mainNavbar .logo {
+        transform: translateX(50px);
+    }
+}
+@media (max-width: 1600px) {
+
+    .hlavni-fot {
+        width: 100%;
+        margin-top: 70px;
+    }
+
+    .troj-fot img {
+        width: 400px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .hlavni-fot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hlavni-fot img {
+        width: 720px;
+    }
+
+    .karta-jedna, .karta-dva {
+        margin-top: 70px;
+    }
+
+    .stredo-fot h1 {
+        padding: 0;
+        margin: 0;
+    }
+
+    .troj-fot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .troj-fot img {
+        margin-top: 50px;
+        width: 500px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 1250px) {
+    #mainNavbar .logo {
+        transform: translateX(20px);
+    }
+
+    .navbar-nav li, .dropdown {
+        margin-right: 20px;
+    }
+
+    .hlavni-fot {
+        margin-top: 150px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .karta-tri img {
+         width: 80%;
+         display: flex;
+         margin: auto;
+    }
+}
+
+@media (max-width: 930px) {
+    .hlavni-fot {
+        margin-top: 200px;
+    }
+
+    .text-tri {
+        left: 15%;
+    }
+
+    .display-4 {
+        font-size: 2.7em;
+    }
+
+    .footer-navi ul {
+        width: 70%;
+    }
+}
+
+@media (max-width: 750px) {
+    .hlavni-fot {
+        margin-top: 250px;
+    }
+
+    .hlavni-fot img {
+        width: 550px;
+        height: 400px;
+    }
+
+    .stredo-fot h1 {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 630px) {
+    .text-jedna, .text-dva, .text-tri {
+        font-size: 0.8em;
+    }
+
+    .text-jedna h1, .text-dva h1 {
+        left: 10%;
+    }
+
+    .karta-jedna img, .karta-dva img {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        height: auto;
+    }
+
+    .stredo-fot img {
+        display: flex;
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media (max-width: 540px) {
+    .hlavni-fot {
+        margin-top: 300px;
+    }
+
+    .text-jedna, .text-dva, .text-tri {
+        font-size: 0.7em;
+    }
+
+    .footer-navi ul {
+        font-size: 0.8em;
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hlavni-fot {
+        margin-top: 0px;
+        bottom: 0px;
+    }
+
+    .text-jedna, .text-dva, .text-tri {
+        font-size: 0.6em;
+    }
+    .text-jedna h1, .text-dva h1, .text-tri h1 {
+        padding: 0px 10px;
+    }
+
+    .stredo-fot {
+        bottom: 0px;
+    }
+
+    .stredo-fot h1 {
+        font-size: 2em;
+    }
+
+    .karta-tri {
+        display: none;
+    }
+}
+
+@media (max-width: 390px) {
+    .text-jedna, .text-dva, .text-tri {
+        font-size: 0.5em;
+    }
+
+    .footer-navi ul {
+        font-size: 0.7em;
+        width: 100%;
+    }
+}
+
+@media (max-width: 320px) {
+    .text-jedna h1, .text-dva h1, .text-tri h1 {
+        padding: 0px 5px;
+    }
+
+    .stredo-fot h1 {
+        font-size: 1.7em;
+    }
+}
